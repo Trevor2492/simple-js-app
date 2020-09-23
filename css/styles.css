@@ -3,3 +3,18 @@
   font-size: 30px;
   margin: 30px;
 }
+
+.button {
+  font-size: 30px;
+  background-color: lightgray;
+  margin: 10px;
+  border: 0 solid;
+  border-radius: 5px;
+}
+
+.button:hover {
+  font-size: 30px;
+  background-color: lightblue;
+  transition-duration: 300ms;
+  cursor: pointer;
+}
