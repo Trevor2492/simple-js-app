@@ -23,14 +23,12 @@ let pokemonRepository = (function () {
     button.classList.add('button');
     listItem.appendChild(button);
     list.appendChild(listItem);
-
-    button.addEventListener('click', function(pokemon){
-      showDetails(pokemon);
-    });
+    //This listens for the user to click on one of the pokemon in the list, then runs the showDetails() function
+    button.addEventListener('click', function(event){showDetails(pokemon);});
   }
 
   function showDetails(pokemon){
-    console.log('I don\'t know what to put here');
+    console.log(pokemon.name);
   }
 
   return {
