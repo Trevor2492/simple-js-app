@@ -1,20 +1,29 @@
-.array_class {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 30px;
-  margin: 30px;
+h1 {
+  font-family: roboto, monospace;
+  font-size: 45px;
+  color: #0f370e;
+  margin-left: 54px;
 }
 
-.button {
+.pokemon-list {
+  list-style-type: none;
+  font-family: roboto, monospace;
+  min-width: 30%;
+  text-align: left;
+}
+
+button {
   font-size: 30px;
-  background-color: lightgray;
+  color: #30622f;
+  background-color: white;
   margin: 10px;
   border: 0 solid;
   border-radius: 5px;
 }
 
-.button:hover {
-  font-size: 30px;
-  background-color: lightblue;
+button:hover {
+  font-size: 32px;
+  background-color: #e5ffe1;
   transition-duration: 300ms;
   cursor: pointer;
 }
