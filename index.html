@@ -12,8 +12,18 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1>Pokedex</h1>
+
+    <!--Header for the app-->
+    <h1 id="pokedex-title">Pokedex</h1>
+
+    <!--Creates the modal when a pokemon is clicked-->
+    <button id="show-modal">Show Modal</button>
+    <button id="show-dialog">Show Dialog</button>
+    <div id="modal-container"></div>
+
+    <!--Creates the list of pokemon from the scripts.js file-->
     <ul class="pokemon-list"></ul>
+
     <div>
       <script> src="js/fetch.umd.js"</script>
       <script> src="js/promise-polyfill.js"</script>
