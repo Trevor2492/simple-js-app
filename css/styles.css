@@ -111,25 +111,3 @@ button:hover {
   width: 200px;
   height: 200px;
 }
-
-@media all and (max-width: 750px) {
-  .modal h1 {
-    font-size: 38px;
-  }
-  .modal p {
-    font-size: 25px;
-  }
-}
-
-@media all and (max-width: 350px) {
-  .modal h1 {
-    font-size: 25px;
-  }
-  .modal p {
-    font-size: 23px;
-  }
-  .modal-close{
-    font-size: 23px;
-    margin: 10px;
-  }
-}
