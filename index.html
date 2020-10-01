@@ -18,11 +18,31 @@
     <!--Header for the app-->
     <h1 id="pokedex-title">Pokedex</h1>
 
+    <!--Creates the modal when a pokemon is clicked-->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#pokemonModal">
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="pokemonModal" tabindex="-1" role="dialog" aria-labelledby="pokemonModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <!--Modal header starts here (displays the pokemon name in the modal)-->
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!-- Modal body starts here (displays pokemon info) -->
+          <div class="modal-body">This is the body of the modal</div>
+        </div>
+      </div>
+    </div>
+
     <!--Creates the list of pokemon from the scripts.js file-->
     <ul class="pokemon-list"></ul>
-
-    <!--Creates the modal when a pokemon is clicked-->
-    <div class="modal"></div>
 
     <div>
       <script src="js/fetch.umd.js"></script>
@@ -32,7 +52,7 @@
       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
       <!--"popper" is a bootstrap dependency-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <!--This allows for the use of "bootstrap" styling in CSS-->
+      <!--This allows for the use of "bootstrap" styling in CSS (these 3 have to be in this order)-->
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </div>
   </body>
