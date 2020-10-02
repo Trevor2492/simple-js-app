@@ -13,18 +13,17 @@ let pokemonRepository = (function () {
 
   //This function adds a list item to the list for each pokemon
   function addListItem(pokemon){
-    let list = document.querySelector('.pokemon-list');
-    let listItem = document.createElement('li');
-    let button = document.createElement('button')
-    button.innerText = pokemon.name;
-    button.classList.add('btn-light');
-    button.setAttribute('data-toggle', 'modal'); //this works with bootstrap to open the modal when the pokemon name button is clicked
-    button.setAttribute('data-target', '#pokemonModal');
-    listItem.appendChild(button);
-    list.appendChild(listItem);
+    let list = $('.pokemon-list');
+    let listItem = $('<li></li>');
+    let button = $('<button>' + pokemon.name + '</button>');
+    button.addClass('btn-primary');
+    button.attr('data-toggle', 'modal'); //this works with bootstrap to open the modal when the pokemon name button is clicked
+    button.attr('data-target', '#pokemonModal');
+    listItem.append(button);
+    list.append(listItem);
 
     //This listens for the user to click on one of the pokemon in the list, then runs the showDetails() function
-    button.addEventListener('click', function(event){showDetails(pokemon);});
+    button.on('click', function(event){showDetails(pokemon);});
   }
 
   //This used to just display the pokemons details to the modal when clicked
